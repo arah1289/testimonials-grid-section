@@ -1,0 +1,166 @@
+:root {
+    --font-size: 15px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: hsl(214, 17%, 92%);
+    font-family: "Barlow Semi Condensed", sans-serif;
+    min-width: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 0.1px;
+}
+
+p {
+    margin-bottom: 0;
+}
+
+/* main Style */
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    gap: 40px;
+    transform: scale(0.9);
+}
+
+.topanddown {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.down {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row-reverse;
+    gap: 40px;
+}
+
+.top {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    gap: 40px;
+}
+
+.post {
+    border-radius: 10px;
+    box-shadow: 20px 33px 80px rgba(0, 0, 0, 0.35);
+}
+
+.container {
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+}
+.post {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.name p {
+    margin: 0;
+}
+
+.profile img {
+    width: 40px;
+    border-radius: 45%;
+}
+
+.long .text h3 {
+    width: 600px;
+    margin-top: 20px;
+    z-index: 999;
+    position: relative;
+}
+
+.text h3 {
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.long .text p {
+    width: 582px;
+    color: hsl(0, 0%, 100%);
+    font-size: 16px;
+}
+
+.short h3 {
+    width: 223px;
+    margin: 20px 0 25px;
+}
+
+.short .text p {
+    width: 225px;
+    font-size: 16px;
+}
+
+.profile p {
+    font-size: var(--font-size);
+    font-weight: 500;
+}
+
+.profile span {
+    font-size: 13px;
+}
+
+.text p, h3 {
+    line-height: 1.5em;
+}
+
+.post1 {
+    background-color: hsl(263, 55%, 52%);
+    color: hsl(0, 0%, 100%);
+}
+
+.post1 {
+    color: hsl(260, 100%, 95%);
+}
+
+.post1 .profile img {
+    border: 2px solid hsl(264, 82%, 80%);
+}
+
+.post1::before {
+    content: url(/images/bg-pattern-quotation.svg);
+    position: absolute;
+    transform: translateX(429%) translateY(-21%) scale(1.35);
+}
+
+.post2 {
+    background-color: hsl(217, 19%, 35%);
+    color: hsl(214, 17%, 92%);
+}
+
+.post3 {
+    background-color: hsl(219, 29%, 14%);
+    color: hsl(0, 0%, 81%);
+}
+
+.post4 {
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(224, 10%, 45%);
+}
+
+.right {
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(224, 10%, 45%);
+    width: 274.5px;
+}
